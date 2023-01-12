@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
 import "./style.css";
 import { FiPhone } from 'react-icons/fi';
 import { RiMapPinLine } from 'react-icons/ri';
@@ -12,6 +11,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { RiLinkedinFill } from 'react-icons/ri';
 import { RiTwitterFill } from 'react-icons/ri';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Link } from "react-router-dom";
 
 const openInNewTab = url => {
   window.open(url, '_blank', 'noopener,noreferrer');
@@ -34,17 +34,17 @@ const Footer = () => {
                 <p className="footer-text1"><Link rel="noopener noreferrer" onClick={() => openInNewTab('mailto:info@7hillfurniture.com')} > <TfiEmail /> info@7hillfurniture.com</Link></p>
                 <ListGroup>
                       <ListGroup.Item>
-                        <Link rel="noopener noreferrer" onClick={() => openInNewTab('/')} >
+                        <Link to="/" >
                           <AiOutlineInstagram />
                         </Link>
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <Link rel="noopener noreferrer" onClick={() => openInNewTab('/')} >
+                        <Link to="/" >
                           <RiLinkedinFill />
                         </Link>
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <Link rel="noopener noreferrer" onClick={() => openInNewTab('/')} >
+                        <Link to="/" >
                           <RiTwitterFill />
                         </Link>
                       </ListGroup.Item>
@@ -92,7 +92,7 @@ const Footer = () => {
           </Row>
           <Row className="footer-bottom">
             <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-                <p className="footer-bottom-text1">Copyright &copy; {getCurrentYear()} 7Hill Furniture | All Rights Reserved. Designed By <Link rel="noopener noreferrer" onClick={() => openInNewTab('https://www.pixel-studios.com')} >Pixel Studios</Link></p>
+                <p className="footer-bottom-text1">Copyright &copy; {getCurrentYear()} 7Hill Furniture | All Rights Reserved. Designed By <Link to="https://www.pixel-studios.com" >Pixel Studios</Link></p>
             </Col>
             <Col xs={12} sm={12} md={12} lg={6} xl={6}>
                 <p className="footer-bottom-text2">

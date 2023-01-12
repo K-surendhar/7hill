@@ -6,16 +6,15 @@ import OfficeTablesContent from '../../components/officeTablesContent';
 import OfficeTablesLists from '../../components/officeTablesLists';
 
 const OfficeTables = () => {
-
-    return (
-        <>
-          <Header />
-          <img src={OfficeTablesBanner} alt="" className="img-fluid w-100" />
-          <OfficeTablesContent />
-          <OfficeTablesLists />
-          <Footer />
-        </>
-    );
-}
+  return (
+    <>
+      <Header />
+      <img src={OfficeTablesBanner} alt="" className="img-fluid w-100" />
+      <OfficeTablesContent />
+      <OfficeTablesLists />
+      <Footer />
+    </>
+  );
+};
 
 export default OfficeTables;

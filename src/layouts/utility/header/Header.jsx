@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Logo from '../../../assets/images/logo.png';
-import HomeFurniture from '../../../assets/images/menu-home-furniture.jpg';
-import HomeInstitutionalFurniture from '../../../assets/images/menu-institutional-furniture.jpg';
+import Logo from "../../../assets/images/logo.png";
+import HomeFurniture from "../../../assets/images/menu-home-furniture.jpg";
+import HomeInstitutionalFurniture from "../../../assets/images/menu-institutional-furniture.jpg";
 import "./style.css";
-import { TfiEmail } from 'react-icons/tfi';
-import { FiPhone } from 'react-icons/fi';
+import { TfiEmail } from "react-icons/tfi";
+import { FiPhone } from "react-icons/fi";
 
-const openInNewTab = url => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+const openInNewTab = (url) => {
+  window.open(url, "_blank", "noopener,noreferrer");
 };
 
 const Header = () => {
+  const [isActive, setActive] = useState("false");
 
     const [isActive, setActive] = useState("false");
     const [isActive1, setActive1] = useState("false");

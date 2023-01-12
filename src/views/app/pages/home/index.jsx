@@ -13,23 +13,22 @@ import HomeVideo from '../../components/homeVideo';
 import HomeTestimonials from '../../components/homeTestimonials';
 
 const Home = () => {
-
-    return (
-      <>
-        <Header />
-        <HomeProductSlider />
-        <HomeAbout />
-        <HomeCounters />
-        <HomeTabs />
-        <HomeCTA />
-        <HomeVision />
-        <HomeFurnish />
-        <HomeBlog />
-        <HomeVideo />
-        <HomeTestimonials />
-        <Footer />
-      </>
-    );
-}
+  return (
+    <>
+      <Header />
+      <HomeProductSlider />
+      <HomeAbout />
+      <HomeCounters />
+      <HomeTabs />
+      <HomeCTA />
+      <HomeVision />
+      <HomeFurnish />
+      <HomeBlog />
+      <HomeVideo />
+      <HomeTestimonials />
+      <Footer />
+    </>
+  );
+};
 
 export default Home;

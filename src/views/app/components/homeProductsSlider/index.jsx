@@ -2,11 +2,40 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import HomeProductsData from '../../data/homeProducts.json';
+import HomeProductsData from "../../data/homeProducts.json";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
 const HomeProductsSlider = () => {
+  var settings = {
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    centerMode: true,
+    centerPadding: "100px",
+    slidesToShow: 3,
+    dots: true,
+    swipe: true,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  };
 
     var settings = {
       autoplay: true,

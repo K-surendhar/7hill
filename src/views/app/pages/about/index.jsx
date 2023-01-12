@@ -8,18 +8,21 @@ import AboutReasonsTab from '../../components/about5Reasons';
 import AboutCertifications from '../../components/aboutCertification';
 
 const AboutUs = () => {
-
-    return (
-        <>        
-          <Header />
-          <img src={AboutBanner} alt="" className="img-fluid w-100" />
-          <AboutSection />
-          <AboutVisionMission />
-          <AboutReasonsTab />
-          <AboutCertifications />
-          <Footer />
-        </>
-    );
-}
+  return (
+    <>
+      <Header />
+      <img
+        src={AboutBanner}
+        alt="AboutBanner-pic"
+        className="img-fluid w-100"
+      />
+      <AboutSection />
+      <AboutVisionMission />
+      <AboutReasonsTab />
+      <AboutCertifications />
+      <Footer />
+    </>
+  );
+};
 
 export default AboutUs;

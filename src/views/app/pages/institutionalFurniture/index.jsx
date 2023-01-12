@@ -8,18 +8,21 @@ import HomeCTA from '../../components/homeCTA';
 import HomeBlog from '../../components/homeBlog';
 
 const InstitutionalFurniture = () => {
-
-    return (
-        <>
-          <Header />
-          <img src={InstitutionalFurnitureBanner} alt="" className="img-fluid w-100" />
-          <InstitutionalFurnitureContent />
-          <InstitutionalFurnitureTabs />
-          <HomeCTA />
-          <HomeBlog />
-          <Footer />
-        </>
-    );
-}
+  return (
+    <>
+      <Header />
+      <img
+        src={InstitutionalFurnitureBanner}
+        alt=""
+        className="img-fluid w-100"
+      />
+      <InstitutionalFurnitureContent />
+      <InstitutionalFurnitureTabs />
+      <HomeCTA />
+      <HomeBlog />
+      <Footer />
+    </>
+  );
+};
 
 export default InstitutionalFurniture;

@@ -96,8 +96,6 @@ ul {
     padding-inline-start: 0px;
 }
 
-
-
 a {
     color: var(--color-orange);
     text-decoration: none;
@@ -114,7 +112,6 @@ a:hover {
     font-family: 'DM Sans', sans-serif;
     outline: none !important;
 }
-
 
 .text-gray{
     color: var(--color--darkgray);
